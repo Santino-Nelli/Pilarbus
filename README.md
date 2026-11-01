@@ -35,3 +35,17 @@ la incorporación a `Main` denominada **Marge** (la incorporacion de una rama a 
 - Las observaciones de la revisión estén resueltas
 - Exista una aprobacion de otro integrante
 - Los controles automaticos de build y test finalicen correctamente
+
+## Integración Continua: CI
+La integración continua permite comprobar frecuentemente los cambios y detectar errores antes de su publicación. Esta etapa incluye fases de Build y Test:
+
+### Build: construcción 
+El Build prepara la aplicación a partir del código y sus dependencias. Permite detectar problemas que impidan construir una versión ejecutable, como errores de compilación o componentes faltantes.
+Un Build correcto indicaría que la aplicación pudo construirse, pero no garantizaría por sí solo que todas sus funcionalidades se comporten correctamente.
+
+### Test: Pruebas automáticas
+Los Test comprobarían comportamientos esperados de la aplicación. Para PilarBus, podrían verificar que:
+- Las consultas devuelvan el recorrido de la linea seleccionada
+- 
+
+
