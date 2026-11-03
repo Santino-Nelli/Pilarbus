@@ -81,6 +81,47 @@ enlace:
 
 Este documento describe como proponemos organizar el desarrollo, las tareas, responsables, estimaciones y estados del trabajo de PilarBus.
 
+#ENFOQUE TRADICIONAL 
+
+Implementación del Centro de Cómputos y Anillo de Fibra Óptica del Campus UNP
+
+#Justificación metodológica:  Cascada
+
+Para este proyecto se propone utilizar el modelo de ciclo de vida en Cascada, también denominado predictivo. Este modelo organiza el trabajo en fases que deben planificarse y aprobarse antes de avanzar a las siguientes.
+La elección se justifica por las características del proyecto: existe un presupuesto estricto, los plazos están establecidos por contrato y las tareas presentan dependencias físicas y administrativas. Por ejemplo, la instalación del cableado depende de la finalización de la canalización, mientras que la configuración de la red requiere que los servidores y los equipos estén instalados.
+Además, la adquisición de servidores debe realizarse mediante una licitación pública, cuyos procedimientos y tiempos no pueden modificarse libremente para adaptarse a cada iteración.
+Un enfoque ágil no sería el más conveniente como metodología principal porque no resulta posible entregar la infraestructura física en pequeños incrementos funcionales sin respetar previamente las condiciones técnicas, contractuales y de seguridad. Tampoco sería apropiado modificar constantemente el alcance después de aprobar los planos y comprometer los recursos económicos.
+El modelo en Cascada permite definir anticipadamente los requisitos, diseñar la arquitectura, calcular los costos, establecer las dependencias y documentar las aprobaciones. De este modo, se obtiene un mayor control sobre el presupuesto y el cronograma.
+
+Estimación del esfuerzo y presupuesto
+Para este caso se utilizará una técnica de descomposición del trabajo, conocida como estimación ascendente o Bottom-up. El proyecto se dividirá en fases y tareas, calculando las horas de trabajo y los costos de cada actividad.
+
+Este método resulta adecuado porque el proyecto se centra principalmente en infraestructura física, instalación de equipos y comunicaciones, en lugar de desarrollar un programa de software.
+
+Costos de mano de obra
+
+Fase o recurso        Horas    Tarifa por hora       Costo
+
+Diseño 
+de arquitectura         80           $18.000     $1.440.000
+y planos  
+
+Gestión de licitación   40           $12.000       $480.000
+
+Obra civil 
+y canalización         320           $15.000     $4.800.000
+
+Tendido de fibra 
+e instalación          240          $18.000      $4.320.000
+
+Configuración 
+y pruebas de red       160          $20.000      $3.200.000
+
+Gestión 
+y coordinación         100          $18.000      $1.800.000
+
+Total:                 940                      $16.040.000
+
 
 
 
