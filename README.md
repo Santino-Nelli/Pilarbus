@@ -46,6 +46,43 @@ Un Build correcto indicaría que la aplicación pudo construirse, pero no garant
 ### Test: Pruebas automáticas
 Los Test comprobarían comportamientos esperados de la aplicación. Para PilarBus, podrían verificar que:
 - Las consultas devuelvan el recorrido de la linea seleccionada
-- 
+- Una alerta de desvio se asocie a la linea correspondiente
+- Un reclamo no pueda enviarse sin completar los campos obligatorios
+- Los errores de conexion se gestionan de forma controlada
+
+### Que sucedería si falla un control 
+Si el build o algún test, el flujo informaría el error y el cambio no estaría habilitado para incorporarse a `Main` según las reglas propuestas.
+El responsable debe revisar el resultado, corregir el problema y enviar un nuevo commit. los controles se ejecutan otra vez hasta obtener un resultado que cumpla con las condiciones.
+
+## Entrega continua: CD y Deploy a producción 
+La entrega continua permite mantener una versión valida y preparada para su publicación. 
+Después de superar los controles sobre `main`, se genera una version identificable de la aplicación y se despliega en un entorno de pruebas, separado del utilizado por los pasajeros. Ahi es donde se realizan las verificaciones adicionales.
+Una vez aprobada la versión por el integrante responsable de la entrega, se autoriza el Deploy a producción, es decir, su publicación en el entorno real de servicios.
+La propuesta contempla una aprobación humana antes de publicar. por lo tanto se trata de entrega continua y no de despliegue automatico a produccion de todos lo cambios.
+
+## Actualización del servicio sin interrupciones
+Antes de publicar la nueva version, se comprueba que supere los controles de build y test y se verifica su funcionamiento en un entorno de pruebas.
+Una vez aprobada, se realiza el deploy a producción, planificando la actualización para evitar interrupciones del servicio. Luego de publicarla se debe revisar que las funciones principales sigan funcionando correctamente. La versión anterior es guardada para poder ser recuperada ante cualquier incombeniente.
+
+## Ejemplo de incorporacion: Alerta de desvios
+1) El equipo selecciona en el Trello la tarea "implementar alertas de desvío"
+2) El desarrollador crea la rama `feature/alertas-desvios`.
+3) Implementa la función y agrega pruebas para comprobar que cada alerta se muestre en la linea correspondiente.
+4) Registra los cambios mediante Commit y crea el Pull request hacia Main.
+5) Al abrir o actualizar el Pull request, se ejecuta automáticamente el Build, que comprueba que la aplicación pueda construirse con los cambios, y los Test, verifican que la alerta aparezca en la linea correcta.
+6) Otro integrante revisa le código. Si pide alguna corrección, el desarrollador corrige el problema y actualiza el pull request.
+7) Cuando el revisor aprueba los cambios, se hace el marge para incorporarlo al Main.
+8) Se repiten el Build y el Test sobre la versión incorporada. Si pasan, el equipo comprueba las alertas en un entorno de prueba. La entrega continua (CD) deja la version lista para publicarse.
+9) antes de cada Deploy a producción, el responsable revisa que la versión que se va a publicar haya superado los controles. Si alguno falla, la publicación queda pendiente hasta corregir los errores y volver a probarla.
+10) Con la publicación autorizada, el equipo pone la nueva versión a disposición de los pasajeros y comprueba que las alertas funcionen correctamente.
+
+## Tablero de Trello
+enlace:
+
+Este documento describe como proponemos organizar el desarrollo, las tareas, responsables, estimaciones y estados del trabajo de PilarBus.
+
+
+
+
 
 
