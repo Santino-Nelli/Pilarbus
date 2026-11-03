@@ -120,7 +120,7 @@ y pruebas de red       160          $20.000      $3.200.000
 Gestión 
 y coordinación         100          $18.000      $1.800.000
 
-Total:                 940                      $16.040.000
+Total:                 940                     $16.040.000
 
 
 
