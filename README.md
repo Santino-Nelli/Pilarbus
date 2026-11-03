@@ -125,7 +125,7 @@ Gestión y coordinación; Horas:100 Tarifa por hora:$18.000 Costo: $1.800.000
 CostoTotal:$16.040.000 TotalHoras:940
 
 
-##Planificación mediante DIAGRAMA de GANTT:
+## Planificación mediante DIAGRAMA de GANTT:
 
 
 
