@@ -77,7 +77,7 @@ Una vez aprobada, se realiza el deploy a producción, planificando la actualizac
 10) Con la publicación autorizada, el equipo pone la nueva versión a disposición de los pasajeros y comprueba que las alertas funcionen correctamente.
 
 ## Tablero de Trello
-enlace:
+enlace: https://trello.com/b/4d43VRyj/pilar-bus-%F0%9F%9A%8C
 
 Este documento describe como proponemos organizar el desarrollo, las tareas, responsables, estimaciones y estados del trabajo de PilarBus.
 
