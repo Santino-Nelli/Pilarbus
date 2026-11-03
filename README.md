@@ -81,11 +81,18 @@ enlace:
 
 Este documento describe como proponemos organizar el desarrollo, las tareas, responsables, estimaciones y estados del trabajo de PilarBus.
 
-#ENFOQUE TRADICIONAL 
+## Prototipo y Canva
+En esta parte dejamos un prototipo de la aplicación hecho con ayuda de chatGPT y un canva que tambien muestra como funciona la aplicacion:
+
+Prototipo: https://pilarbus-unpilar-demo.taupemoon1.chatgpt.site/
+
+Canva: https://www.canva.com/design/DAHZ3rEC5a4/hE8B2O9LsL64AWWyB2jCfw/edit
+
+# ENFOQUE TRADICIONAL: (Cascada / Predictive) (Caso 2)
 
 Implementación del Centro de Cómputos y Anillo de Fibra Óptica del Campus UNP
 
-#Justificación metodológica:  Cascada
+## Justificación metodológica:  Cascada
 
 Para este proyecto se propone utilizar el modelo de ciclo de vida en Cascada, también denominado predictivo. Este modelo organiza el trabajo en fases que deben planificarse y aprobarse antes de avanzar a las siguientes.
 La elección se justifica por las características del proyecto: existe un presupuesto estricto, los plazos están establecidos por contrato y las tareas presentan dependencias físicas y administrativas. Por ejemplo, la instalación del cableado depende de la finalización de la canalización, mientras que la configuración de la red requiere que los servidores y los equipos estén instalados.
@@ -93,7 +100,7 @@ Además, la adquisición de servidores debe realizarse mediante una licitación 
 Un enfoque ágil no sería el más conveniente como metodología principal porque no resulta posible entregar la infraestructura física en pequeños incrementos funcionales sin respetar previamente las condiciones técnicas, contractuales y de seguridad. Tampoco sería apropiado modificar constantemente el alcance después de aprobar los planos y comprometer los recursos económicos.
 El modelo en Cascada permite definir anticipadamente los requisitos, diseñar la arquitectura, calcular los costos, establecer las dependencias y documentar las aprobaciones. De este modo, se obtiene un mayor control sobre el presupuesto y el cronograma.
 
-Estimación del esfuerzo y presupuesto
+## Estimación del esfuerzo y presupuesto
 Para este caso se utilizará una técnica de descomposición del trabajo, conocida como estimación ascendente o Bottom-up. El proyecto se dividirá en fases y tareas, calculando las horas de trabajo y los costos de cada actividad.
 
 Este método resulta adecuado porque el proyecto se centra principalmente en infraestructura física, instalación de equipos y comunicaciones, en lugar de desarrollar un programa de software.
