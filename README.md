@@ -5,7 +5,8 @@ Proyecto Pilarbus: Planificación con Scrum, gestión de tareas y control de ver
 - Juan Vizgarra
 - Lautaro Olmedo
 - Vanesa Pavia
-- 
+- Javier Rodriguez
+- Santino Nelli
 
 ## Descripción del proyecto 
 Pilarbus es una propuesta de aplicación móvil y plataforma web para consultar recorridos y la ubicación de los colectivos en tiempo real. tambien contempla funcionalidades como alertas de desvíos y envio de reclamos.
