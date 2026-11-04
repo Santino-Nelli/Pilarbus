@@ -126,7 +126,7 @@ CostoTotal:$16.040.000 TotalHoras:940
 
 
 ## Planificación mediante DIAGRAMA de GANTT:
-
+https://github.com/user-attachments/files/34344862/Diagrama_Gantt_PilarBus.xlsx
 
 
 
